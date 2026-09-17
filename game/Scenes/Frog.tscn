@@ -257,7 +257,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_hjs70")
 }],
-"loop": 1,
+"loop": 2,
 "name": &"Jump",
 "speed": 5.0
 }, {
@@ -307,14 +307,16 @@ animations = [{
 height = 26.0
 
 [node name="Frog" type="CharacterBody2D" unique_id=132181023]
+collision_layer = 2
 script = ExtResource("1_dlqxu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1660941016]
 sprite_frames = SubResource("SpriteFrames_v5o43")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.701121
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1524933935]
 position = Vector2(0, 3)
 shape = SubResource("CapsuleShape2D_20dwi")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=423162398]
