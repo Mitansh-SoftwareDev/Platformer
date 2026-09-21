@@ -4,6 +4,8 @@ public partial class Player: CharacterBody2D
 {
     public const float Speed = 300.0f;
     public const float JumpVelocity = -300.0f;
+    public int JumpCount = 1;
+    public int JumpLimit = 2;
     public Vector2 respawnPosition = Vector2.Zero;
 
     public void respawn()
@@ -22,10 +24,22 @@ public partial class Player: CharacterBody2D
         {
             velocity += GetGravity() * (float)delta;
         }
+        
+        if (!IsOnFloor() && Input.IsActionJustPressed("Up") && JumpCount < JumpLimit)
+        {
+            GD.Print(JumpLimit);
+            JumpLimit += 1;
+            GD.Print("New Jump Limit: " + JumpLimit );
+            velocity.Y = JumpVelocity;
+            GD.Print("Jump Up2");
+        }
 
         // Handle Jump.
         if (Input.IsActionJustPressed("Up") && IsOnFloor())
         {
+            GD.Print(JumpLimit);
+            GD.Print("Jump Up");
+            
             velocity.Y = JumpVelocity;
         }
         if (!IsOnFloor() && Velocity.Y >= 0)
