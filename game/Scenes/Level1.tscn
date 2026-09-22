@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene format=4 uid="uid://m8o1otc40kwk"]
 
 [ext_resource type="Texture2D" uid="uid://b67v2yx5ojqxo" path="res://Assets/PixelAdventure/Terrain/Terrain (16x16).png" id="1_q12u6"]
@@ -16,6 +17,26 @@
 [ext_resource type="Texture2D" uid="uid://dfndcna3kijpm" path="res://Assets/Background/BG Image.png" id="14_bhaf5"]
 [ext_resource type="Texture2D" uid="uid://bmxdjh20vp0me" path="res://Assets/Background/Big Clouds.png" id="15_o0dvq"]
 [ext_resource type="Texture2D" uid="uid://h3j6fhqrcpr4" path="res://Assets/Background/Sky.png" id="16_1nrjw"]
+=======
+[gd_scene format=4 uid="uid://dwmt3egancrlu"]
+
+[ext_resource type="Texture2D" path="res://Assets/PixelAdventure/Terrain/Terrain (16x16).png" id="1_q12u6"]
+[ext_resource type="Script" path="res://Scripts/KillZone.cs" id="2_jghel"]
+[ext_resource type="PackedScene" uid="uid://dlhfjpwfuanw8" path="res://Scenes/Frog.tscn" id="3_joc8x"]
+[ext_resource type="Script" path="res://Scripts/Classes/Checkpoint.cs" id="3_slnnj"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Small Cloud 1.png" id="5_ug0sv"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Small Cloud 2.png" id="6_0wsr5"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Small Cloud 3.png" id="7_jgorv"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Tree silhouette 1.png" id="8_q1ws5"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Tree silhouette 2.png" id="9_yji5v"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Tree silhouette 3.png" id="10_ulvkb"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Trees and Bushes.png" id="11_fh0sh"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Additional Sky.png" id="12_03od6"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Additional Water.png" id="13_384de"]
+[ext_resource type="Texture2D" path="res://Assets/Background/BG Image.png" id="14_bhaf5"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Big Clouds.png" id="15_o0dvq"]
+[ext_resource type="Texture2D" path="res://Assets/Background/Sky.png" id="16_1nrjw"]
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxm5j"]
 size = Vector2(2195.5, 22)
