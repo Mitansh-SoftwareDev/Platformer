@@ -28,16 +28,21 @@ public partial class Player: CharacterBody2D
         if (!IsOnFloor() && Input.IsActionJustPressed("Up") && JumpCount < JumpLimit)
         {
             GD.Print(JumpLimit);
-            JumpLimit += 1;
+            JumpCount += 1;
             GD.Print("New Jump Limit: " + JumpLimit );
             velocity.Y = JumpVelocity;
             GD.Print("Jump Up2");
+        }
+        else if (IsOnFloor())
+        {
+            JumpCount = 0;
         }
 
         // Handle Jump.
         if (Input.IsActionJustPressed("Up") && IsOnFloor())
         {
             GD.Print(JumpLimit);
+            JumpCount += 1;
             GD.Print("Jump Up");
             
             velocity.Y = JumpVelocity;
